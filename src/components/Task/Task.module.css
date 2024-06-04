@@ -1,0 +1,109 @@
+.todo {
+  position: relative;
+  font-size: 24px;
+  border-bottom: 1px solid #ededed;
+}
+
+.todo:last-child {
+  border-bottom: none;
+}
+
+.view {
+  display: flex;
+  align-items: center;
+  padding: 15px 15px 15px 15px;
+}
+
+.toggle {
+  text-align: center;
+  width: 40px;
+  height: auto;
+  position: absolute;
+  left: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  margin: auto 0;
+  border: none;
+}
+
+.todo label {
+  margin-left: 60px;
+  display: block;
+  line-height: 1.2;
+  transition: color 0.4s;
+  cursor: pointer;
+}
+
+.completed label {
+  color: #d9d9d9;
+  text-decoration: line-through;
+}
+
+.checkbox_wrapper:hover .check {
+  stroke-dashoffset: 0;
+}
+
+.checkbox_wrapper {
+  position: absolute;
+  display: inline-block;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+}
+
+.checkbox_wrapper .background {
+  fill: #ccc;
+  transition: ease all 0.6s;
+  -webkit-transition: ease all 0.6s;
+}
+
+.checkbox_wrapper .stroke {
+  fill: none;
+  stroke: #fff;
+  stroke-miterlimit: 10;
+  stroke-width: 2px;
+  stroke-dashoffset: 100;
+  stroke-dasharray: 100;
+  transition: ease all 0.6s;
+  -webkit-transition: ease all 0.6s;
+}
+
+.checkbox_wrapper .check {
+  fill: none;
+  stroke: #fff;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 2px;
+  stroke-dashoffset: 22;
+  stroke-dasharray: 22;
+  transition: ease all 0.6s;
+  -webkit-transition: ease all 0.6s;
+}
+
+.checkbox_wrapper input[type='checkbox'] {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  left: 0;
+  top: 0;
+  margin: 0;
+  opacity: 0;
+  appearance: none;
+  -webkit-appearance: none;
+}
+
+.checkbox_wrapper input[type='checkbox']:hover {
+  cursor: pointer;
+}
+
+.checkbox_wrapper input[type='checkbox']:checked + svg .background {
+  fill: #6cbe45;
+}
+
+.checkbox_wrapper input[type='checkbox']:checked + svg .stroke {
+  stroke-dashoffset: 0;
+}
+
+.checkbox_wrapper input[type='checkbox']:checked + svg .check {
+  stroke-dashoffset: 0;
+}

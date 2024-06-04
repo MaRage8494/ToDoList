@@ -1,0 +1,17 @@
+.new_todo {
+  padding: 16px 16px 16px 16px;
+  border: none;
+  background: rgb(255, 255, 255);
+  font-size: 24px;
+  font-family: inherit;
+  font-weight: inherit;
+  line-height: 1.4em;
+  color: inherit;
+  box-shadow: inset 0 -2px 1px rgba(0, 0, 0, 0.03);
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0;
+}
+.new_todo:focus {
+  outline: none;
+}

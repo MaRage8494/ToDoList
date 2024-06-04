@@ -1,0 +1,52 @@
+.footer {
+  padding: 10px 15px;
+  height: 20px;
+  text-align: center;
+  border-top: 1px solid #e6e6e6;
+}
+
+.todo_count {
+  float: left;
+  text-align: left;
+}
+
+.filters {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  position: absolute;
+  right: 0;
+  left: 0;
+}
+
+.filters li {
+  display: inline;
+}
+
+.filters li a {
+  color: inherit;
+  margin: 3px;
+  padding: 3px 7px;
+  text-decoration: none;
+  border: 1px solid transparent;
+  border-radius: 3px;
+}
+
+.filters li a:hover {
+  border-color: rgba(175, 47, 47, 0.1);
+}
+
+.filters li a.selected {
+  border-color: rgba(175, 47, 47, 0.2);
+}
+
+.clear_completed {
+  float: right;
+  position: relative;
+  line-height: 20px;
+  text-decoration: none;
+  cursor: pointer;
+  background-color: white;
+  border: none;
+  color: #4d4d4d;
+}
